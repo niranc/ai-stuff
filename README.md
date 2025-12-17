@@ -39,7 +39,7 @@ Answer any of those questions :
 
 __Goal is to know 2 things at this point: Do the chatbot scope could have an impact on the organization? What is the likelihood of this impact?__
 
-TL;DR: From a bugbounty POW, if the chatbot can't reach internal documents, data, do not have internet, don't have markdown rendering, well try again but it's not easy man
+TL;DR: From a bugbounty POW, if the chatbot can't reach internal documents, data, do not have internet, don't have markdown rendering, well try again but it's probably dead end
 
 ## Web apps attacks in a chatbot context
 
@@ -104,6 +104,16 @@ Awesome conf https://www.youtube.com/@embracethered
 
 9. **Prompt Injection IRL:**
    - Creative prompt injection techniques, such as embedding prompts in QR codes or images on clothing, though mostly theoretical, highlight future potential vulnerabilities.
+
+# Bottom Line:
+**it's mostly user interraction** (indirect prompt injection into files in shares / malicious website / comments / metadata / YouTube video / song / pictures ).  
+
+For red teaming usage, goal is to poison legitimate shares (chatbot has access to) and add content poisoned with indirection prompt injections
+or malicious website with .md or .html files with Embedded prompt injections - or use trusted sources such as azure containers to provide malicious documents
+some ideas : [llm-tests](https://github.com/wunderwuzzi23/scratch/tree/master/llm-tests)
+Nice C2 ideas [C2 ideas](https://embracethered.com/blog/posts/2025/spaiware-and-chatgpt-command-and-control-via-prompt-injection-zombai/)
+
+Good luck! talking to those chatbot is the key!
 
 
 
